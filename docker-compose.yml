@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  caves:
+    image: "dts:latest"
+    command: run-caves
+    volumes:
+      - "./MyDediServer:/root/.klei/DoNotStarveTogether/MyDediServer/"
+  master:
+    image: "dts:latest"
+    command: run-master
+    volumes:
+      - "./MyDediServer:/root/.klei/DoNotStarveTogether/MyDediServer/"
